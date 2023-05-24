@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/io.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <title>Arsitektur dan Organisasi Komputer</title>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg bg-black">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse fs-5" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#InputOuput" class="nav-link text text-white" aria-current="page">Input / Output</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#SistemBus" class="nav-link text text-white" aria-current="page">Sistem Bus</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <div class="container-fluid">
+        <div class="row" style="background-color: black; height: 92vh;">
+            <div class="col-8">
+                <h4 class="text text-white" style="margin-top: 40%; margin-left: 15%;">Arsitektur dan Organisasi Komputer</h4>
+                <h1 class="text text-white fw-bold fs-1" style="margin-left:15%;">Input Output dan Sistem Bus</h1>
+                <p class="text text-white" style="margin-left: 15%;">by <strong>Banny Juanda - 1201226080 - TELKOM UNIVERSITY JAKARTA</strong></p>
+            </div>
+            <div class="col">
+                <!-- <img src="image/logoadit.png" alt="" style="opacity: 0.1;"> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Input Output -->
+    <div class="container">
+        <div class="ms-5" id="Pengantar">
+            <h3 class="mt-5 mb-5 fs-3 fw-bold">Pengatar</h3>
+            <p class="text text-justify fs-5">Input/Output (I/O) dan Sistem Bus merupakan dua konsep dasar dalam komputasi moder. I/O mengacu pada pengiriman dan penerimaan data antara komputer dan perangkat peripheral seperti keyboard, mouse, monitor dan printer. Di sisi lain, Sistem Bus adalah jalur komunikasi yang menghubungkan berbagai komponen perangkat keras dari sistem komputer. Kedua konsep ini memainkan peran penting dalam memungkinkan interaksi manusia-komputer dan memfasilitasi komunikasi dan koordinasi antara berbagai komponen perangkat keras dari sistem komputer. </p>
+        </div>
+        <div class="ms-5" id="InputOuput">
+            <h3 class="mt-5 mb-4 fs-3 fw-bold">Input dan Output (I/O)</h3>
+            <p class="text text-justify fs-5">Mekanisme pengiriman data melalui aliran data yang diproses dari perangkat input ke perangkat output. Fungsi dari I/O adalah sarana komunikasi antara pengguna dengan komputer.</p>
+        </div>
+        <div class="ms-5" id="Peripheral">
+            <h3 class="mt-5 mb-4 fs-3 fw-bold">Perangkat Peripheral (I/O)</h3>
+            <p class="text text-justify fs-5">Peripheral adalah perangkat <i>eksternal</i> yang tersambung dalam sistem CPU melalui modul I/O melalui line kontrol, status, dan data.</p>
+            <div class="d-flex justify-content-center">
+                <div class="row">
+                    <div class="col">
+                        <img src="image/Picture1IO.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="image/Picture2IO.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <p class="text text-justift fs-5">Beberapa kategori perangkat peripheral :</p>
+            <ul class="text text-justify fs-5">
+                <li><strong>Human Readable Machine :</strong> Perangkat fisik yang digunakan sebagai alat komunikasi pengguna komputer. <br> Contoh : Monitor, keyboard, mouse, printer, joystick, diskdrive.</li>
+                <li><strong>Machine Readable Machine :</strong> Perangkat fisik yang berhubungan dengan peralatan atau hanya bisa terbaca oleh komputer.<br> Contoh : Modul sensor dan tranduser untuk monitoring dan kontrol suatu peralatan atau system, piringan disk.</li>
+                <li><strong>Communication :</strong> Perangkat yang digunakan untuk komunikasi jarak jauh. <br> Contoh : NIC, modem.</li>
+            </ul>
+        </div>
+        <div class="ms-5" id="IOPort">
+            <h3 class="mt-5 mb-4 fs-3 fw-bold">Input / Ouput Port</h3>
+            <p class="text text-justify fs-5">Tempat konektor Input Output melalui control processor, berfungsi sebagai jalur masukan perintah untuk komputer dan jalur keluar dari hasil perintah komputer.</p>
+            <div class="d-flex justify-content-center">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="image/portparalel.PNG" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-6">
+                        <img src="image/portusb.PNG" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-6">
+                        <img src="image/portps2.PNG" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-6">
+                        <img src="image/portvga.PNG" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <img src="image/portserial.PNG" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-6">
+                        <img src="image/portlan.PNG" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-6">
+                        <img src="image/portfdd.PNG" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-6">
+                        <img src="image/portaudio.PNG" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ms-5" id="KonfigurasiIO">
+            <h3 class="mt-5 mb-4 fs-3 fw-bold">Konfigurasi Input / Ouput</h3>
+            <div class="row">
+                <div class="col">
+                    <h4 class="mb-4 fw-bold">INPR dan OUTR Register</h4>
+                    <p class="text text-justify fs-5">Tempat peyimpanan data sementara dalam CPU selama proses eksekusi. Apabila terjadi proses eksekusi data dalam register dikirim ke ALU untuk diproses, hasil dari eksekusi nanti diletakan ke register kembail.</p>
+                    <h4 class="mt-4 mb-4 fw-bold">AC / Unit Control</h4>
+                    <p class="text text-justify fs-5">Unit kontrol akan menghasilkan sinyal yang akan mengontrol operasi ALU dan perpindahan data ke dan dari ALU.</p>
+                    <h4 class="mt-4 mb-4 fw-bold">FGI / FGO Flags</h4>
+                    <p class="text text-justify fs-5">Flag diset ALU sebagai hasil dari suatu operasi, misalnya: overflow flag diset 1 bila hasil komputasi melampaui panjang register tempat flag disimpan.</p>
+                </div>
+                <div class="col">
+                    <img src="image/konfigurasiio.PNG" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="ms-5" id="ProsesIO">
+            <h3 class="mt-5 mb-4 fs-3 fw-bold">Proses Input / Ouput</h3>
+            <ul class="text text-justify fs-5">
+                <li>CPU memeriksa status I/O modul device</li>
+                <li>I/O modul mengembalikan status</li>
+                <li>Jika sudah siap, CPU melakukan permintaan pengiriman data</li>
+                <li>I/O modul mendapatkan data dari device</li>
+                <li>I/O modul melakukan pengiriman data ke CPU</li>
+                <li>Output</li>
+            </ul>
+        </div>
+        <div class="ms-5" id="TeknikOperasiIO">
+            <h3 class="mt-5 mb-4 fs-3 fw-bold">Teknik Operasi Input / Ouput</h3>
+            <div class="row">
+                <h4 class="mb-4 fw-bold">1. Programmed I/O</h4>
+                <div class="col-sm-4">
+                    <img src="image/programmedIO.PNG" alt="" class="img-fluid">
+                </div>
+                <div class="col-sm-8">
+                    <p class="text text-justify fs-5">Pada programmed I/O, data saling dipertukarkan antara CPU dan modul I/O. Kelemahan dari programmed I/O adalah membuang waktu CPU karena kecepatan pengiriman data pada CPU lebih cepat daripada perangkat peripheral, saat CPU menerima perintah lain, CPU harus menunggu sampai proses pengiriman data selesai.</p>
+                    <p class="text text-justify fs-5">Proses :</p>
+                    <ul class="text text-justify fs-5">
+                        <li>CPU melakukan permintaan operasi perintah kepada I/O</li>
+                        <li>CPU mempunyai kontrol pada Sensing Status, perintah read/write, dan pengiriman data I/O</li>
+                        <li>CPU memberi alamat, menentukan modul I/O dan perangkat peripheral</li>
+                        <li>Modul I/O menjalankan operasi</li>
+                        <li>Modul I/O memberikan status bits</li>
+                        <li>Modul I/O tidak dapat melakukan interupsi kepada CPU</li>
+                        <li>CPU memeriksa status bits secara periodik</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <h4 class="mt-5 mb-4 fw-bold">2. Interrupt Driven</h4>
+                <div class="col-sm-8">
+                    <p class="text text-justify fs-5">CPU mengeluarkan perintah pada modul I/O, disaat yang sama CPU akan melakukan perintah lainnya. Setelah modul I/O selesai menjalankan instruksi, modul I/O akan melakukan interupsi pada CPU bahwa tugasnya sudah selesai. CPU melakukan multitaskin beberapa perintah sekaligus, sehingga tidak ada waktu tunggu bagi CPU saat mengirim data.</p>
+                    <p class="text text-justify fs-5">Proses :</p>
+                    <ul class="text text-justify fs-5">
+                        <li>I/O controller menerima perintah, misal <i>read.</i></li>
+                        <li>I/O controller melaksanakan perintah pembacaan dari peripheral dan meletakan paket data ke register data I/O controller, sementara CPU mengerjakan yang lain.</li>
+                        <li>I/O controller mengeluarkan sinyal interupsi ke CPU melalui saluran kontrol.</li>
+                        <li>CPU meminta data.</li>
+                        <li>Modul meletakkan data pada bus data dan modul siap menerima perintah selanjutnya.</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <img src="image/interruptDriven.png" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="row">
+                <h4 class="mt-5 mb-4 fw-bold">3. Direct Memory Access (DMA)</h4>
+                <div class="col-sm-8">
+                    <p class="text text-justify fs-5">CPU menyerahkan kerja I/O kepada Direct Memory Access. CPU hanya terlibat pada awal (memberi perintah pada DMA) dan akhir proses. Hanya melibatkan CPU dan DMA, sehingga kinerja CPU tidak akan banyak terganggu dengan interupsi.</p>
+                    <p class="text text-justify fs-5">Proses :</p>
+                    <ul class="text text-justify fs-5">
+                        <li>CPU memberikan perintah ke modul DMA (read/write, alamat perangkat I/O, lokasi awal memori, jumlah word).</li>
+                        <li>CPU melanjutkan pekerjaan lain.</li>
+                        <li>Modul DMA memindahkan seluruh blok data secara langsung ke memori tanpa harus melalui CPU.</li>
+                        <li>Modul DMA mengirimkan signal interrupt ke CPU.</li>
+                        <li>CPU dapat menjalankan proses lainnya.</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <img src="image/dma.PNG" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sistem Bus -->
+    <div class="container">
+        <div class="mt-5 ms-5" id="SistemBus">
+            <h3 class="mt-5 mb-4 fs-3 fw-bold">Sistem Bus</h3>
+            <p class="text text-justify fs-5">Sistem Bus dapat dianggap sebagai sistem transportasi internal komputer. Sistem Bus membawa alamat, data, dan informasi kontrol.</p>
+        </div>
+        <div class="ms-5" id="InterkoneksiBus">
+            <h3 class="mt-5 mb-4 fs-3 fw-bold">Interkoneksi Bus</h3>
+            <p class="text text-justify fs-5">Bus merupakan lintasan komunikasi yang menghubungkan dua atau lebih komponen komputer. Diperlukan aturan main agar tidak terjadi kerusakan data yang ditansmisikan, walaupun digunakan bersama namun dalam satu waktu hanya ada sebuah perangkat yang dapat menggunakan bus.</p>
+        </div>
+        <div class="ms-5" id="LebarBus">
+            <h3 class="mt-5 mb-4 fs-3 fw-bold">Lebar Bus</h3>
+            <p class="text text-justify fs-5"> Semakin lebar bus maka semakin besar data yang dapat dikirim salam satu waktu.
+                <br>
+                Semakin besar bus alamat, maka semakin banyak memori yang dapat diakses.
+            </p>
+        </div>
+        <div class="ms-5" id="BagianSaluran">
+            <h3 class="mt-5 mb-4 fs-3 fw-bold">Bagian Saluran Sistem Bus</h3>
+            <h4 class="mb-4 fw-bold">Saluran Data</h4>
+            <p class="text text-justify fs-5">Saluran Data adalah jalur bagi perpindahan data antar modul, secara kolektif jalur ini disebut bus data. Pada Umumnya jumlah saluran terkait dengan panjang word, misalnya 8, 16, 32 saluran.
+                <br>
+                Tujuan dari Saluran Data adalah mengirim word dalam satu waktu. Lebar bus dapat dikatakan sebagai jumlah saluran dalam bus data dengan satuan bit, misalnya lebar bus 16 bit.
+            </p>
+            <h4 class="mt-5 mb-4 fw-bold">Saluran Alamat</h4>
+            <p class="text text-justify fs-5">Saluran Alamat berfungsi untuk menspesifikasi sumber dan tujuan data pada bus data, mengirim alamat word pada memori yang akan diakses CPU, perangkat modul komputer saat CPU mengakses suatu modul.
+                <br>
+                Semua peralatan yang terhubung dengan sistem komputer harus memiliki alamat supaya dapat diakses. Contohnya mengakses port I/O, maka port I/O harus memiliki alamat hardwarenya.
+            </p>
+            <h4 class="mt-5 mb-4 fw-bold">Saluran Kontrol</h4>
+            <p class="text text-justify fs-5">Saluran Kontrol berfungsi untuk mengatur bus data, bus alamat dan seluruh modul yang ada. Karena bus data dan bus alamat digunakan oleh semua komponen maka diperlukan suatu mekanisme kerja yang diatur melalui bus kontrol ini.
+                <br>
+                Sinyal-sinyal kontrol terdiri atas
+                <ul class="text text-justify fs-5">
+                    <li>Sinyal pewaktuan</li>
+                    <li>Sinyal-sinyal perintah</li>
+                </ul>
+            </p>
+        </div>
+        <div class="ms-5" id="JenisBus">
+            <h3 class="mt-5 mb-4 fs-3 fw-bold">Jenis-jenis Bus</h3>
+            <h4 class="mb-4 fw-bold">Dedicated Bus</h4>
+            <p class="text text-justify fs-5"> Dedicated Bus adalah bus yang dibedakan menjadi bus yang khusus menyalurkan data tertentu, misalnya paket data saja, atau alamat saja.
+            </p>
+            <h4 class="mt-5 mb-4 fw-bold">Multiplexed Bus</h4>
+            <p class="text text-justify fs-5"> Multiplexed bus adalah bus yang dilalui oleh informasi yang berbeda baik data, alamat maupun sinyal kontrol.
+                <br>
+                Keuntungan dari Multiplexed bus adalah hanya memerlukan saluran yang sedikit sehingga dapat menghemat tempat.
+                <br>
+                Kerugian dari Multiplexed bus adalah kecepatan mengirim data menurun dan memerlukan mekanisme yang kompleks untuk mengurai data yang telah dimultiplex.
+            </p>
+            <h4 class="mt-5 mb-4 fw-bold">Contoh Bus</h4>
+            <ul class="text text-justify fs-5">
+                <li>Industry Standar Architecture (ISA)</li>
+                <li>Peripheral Component Interconnection (PCI)</li>
+                <li>Universal Standard Bus (USB)</li>
+                <li>Small Computer System Interface (SCSI)</li>
+                <li>Bus P1394 / Fire wire</li>
+            </ul>
+        </div>
+        <div class="ms-5" id="Metode">
+            <h3 class="mt-5 mb-4 fs-3 fw-bold">Metode Arbitrasi</h3>
+            <p class="text text-justify fs-5">Pada metode tersentral diperlukan pengatur bus sentral atau arbiter yang bertugas mengatur penggunaan bus oleh modul. Arbiter bisa suatu modul atau bagian fungsi CPU.</p>
+            <p class="mt-3 text text-justify fs-5">Pada metode terdistribusi, setiap modul memiliki logika pengatur akses yang berfungsi sebagai mengatur pertukaran data melalui bus.</p>
+            <p class="mt-3 text text-justify fs-5">Kedua metode arbitrasi pada intinya menugaskan suatu perangkat bisa modul I/O ataupun CPU bertindak sebagai master kontrol pertukaran.</p>
+        </div>
+        <div class="ms-5" id="Timing">
+            <div class="mt-4">
+                <h3 class="mt-5 mb-4 fs-3 fw-bold">Timing-Sinkron</h3>
+                <p class="text text-justify fs-5">Sebuah transmisi 1-0 disebut siklus waktu dan menentukan besarnya slot waktu. Metode pewaktuan sinkron terjadinya event pada bus yang ditentukan oleh sebuah pewaktu (clock). Semua perangkat modul pada bus dapat membaca atau mengetahui siklus clock. Biasanya satu siklus untuk satu event.</p>
+                <p class="mt-3 text text-justify fs-5">Model ini mudah diimplementasikan dan cepat namun kurang fleksibel menangani peralatan yang beda kecepatan operasinya. Biasanya digunakan untuk modul-modul tertentu yang sudah jelas karakteristiknya.</p>
+            </div>
+            <div class="mt-4">
+                <h3 class="mt-5 mb-4 fs-3 fw-bold">Timing-Asinkron</h3>
+                <p class="text text-justify fs-5">Kecepatan kerja modul yang tidak bersamaan. Event yang terjadi pada bus tergantung event sebelumnya sehingga diperlukan sinyal-sinyal validasi untuk mengidentifikasikan data yang dikirim.</p>
+                <p class="mt-3 text text-justify fs-5">Sistem ini dapat menggabungkan kerja modul-modul yang berbeda kecepatan maupun teknologinya, asalkan aturan kirimnya sama.</p>
+            </div>
+        </div>
+        <div class="ms-5" id="TransferData">
+            <h3 class="mt-5 mb-4 fs-3 fw-bold">Transfer Data</h3>
+            <p class="text text-justify fs-5">Data yang tersimpan dalam memori dapat diakses dan dieksekusi CPU melalui perantara bus. Melihat hasil eksekusi melalui monitor juga menggunakan sistem bus. Kecepatan komponen penyusun komputer harus diimbangi kecepatan dan manajemen bus yang baik.</p>
+        </div>
+        <div class="ms-5" id="Penutup">
+            <h3 class="mt-5 mb-3 fs-3 fw-bold">Penutup</h3>
+            <p class="text text-justify fs-5">Mungkin itu saja penjelasan tentang Input/Output dan Sistem Bus. Terimakasih telah membaca.</p>
+        </div>
+    </div>
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>Dibuat oleh <strong>Banny Juanda</strong></p>
+    </footer>
+</body>
+</html>
